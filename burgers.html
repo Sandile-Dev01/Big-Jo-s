@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Burgers Section</title>
+        
+        <script src="https://kit.fontawesome.com/9c2c64b826.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="container">
+        
+        <!--Header-->
+        <div class="header-div" id="home-section">
+            <div class="header-logo">
+                <img src="/images/Logo.png">
+            </div>
+            
+            <div class="home-motto">
+                    <img src="/images/Logo.png" alt="logo">
+            </div>
+        </div>
+        
+
+        <!--Order Now-->
+
+        <section class="order-section">
+            <button class="order-btn">Order Now</button>
+            <div class="cart"><i class="fa-solid fa-cart-shopping"></i></div>
+            <div class="cartValue">0</div>
+        </section>
+
+        <!--Items Section-->
+
+            <h1 class="burgers-header menu-item-header">A Grade Burgers</h1>
+
+        <section class="item-section"> 
+
+            <div class="item-div">
+                <img src="/images/burger/1.jpg" class="item-img">
+                <h5 class="item-name">Regular Burger)</h5>
+                <p class="item-price">R22,99</p>
+                <button class="add-item-btn" onclick="increment()">ADD TO CART</button>
+            </div>
+            
+            <div class="item-div">
+                <img src="/images/burger/2.jpg" class="item-img">
+                <h5 class="item-name">Mutton Burger</h5>
+                <p class="item-price">R24,99</p>
+                <button class="add-item-btn" onclick="increment()">ADD TO CART</button>
+            </div>
+            
+            <div class="item-div">
+                <img src="/images/burger/3.jpg" class="item-img">
+                <h5 class="item-name">Chicken Burger</h5>
+                <p class="item-price">R29,99</p>
+                <button class="add-item-btn" onclick="increment()">ADD TO CART</button>
+            </div>
+            
+            <div class="item-div">
+                <img src="/images/burger/4.jpg" class="item-img">
+                <h5 class="item-name">Double Deck Extra Cheesy Burger</h5>
+                <p class="item-price">R44,99</p>
+                <button class="add-item-btn" onclick="increment()">ADD TO CART</button>
+            </div>
+            
+            <div class="item-div">
+                <img src="/images/burger/5.jpg" class="item-img">
+                <h5 class="item-name">Pork Munchy Burger</h5>
+                <p class="item-price">R32,99</p>
+                <button class="add-item-btn" onclick="increment()">ADD TO CART</button>
+            </div>
+            
+            <div class="item-div">
+                <img src="/images/burger/6.jpg" class="item-img">
+                <h5 class="item-name">Grab-A-Seat Burger</h5>
+                <p class="item-price">39,99</p>
+                <button class="add-item-btn" onclick="increment()">ADD TO CART</button>
+            </div>
+            
+            <div class="item-div">
+                <img src="/images/burger/7.jpg" class="item-img">
+                <h5 class="item-name">Regular Cheese Burger</h5>
+                <p class="item-price">R21,99</p>
+                <button class="add-item-btn" onclick="increment()">ADD TO CART</button>
+            </div>
+            
+            <div class="item-div">
+                <img src="/images/burger/8.jpg" class="item-img">
+                <h5 class="item-name">Double Deck Cheese Burger</h5>
+                <p class="item-price">R28,99</p>
+                <button class="add-item-btn" onclick="increment()">ADD TO CART</button>
+            </div>
+
+            <div class="item-div">
+                <img src="/images/burger/9.jpg" class="item-img">
+                <h5 class="item-name">Tummy Pleaser + Chips (s)</h5>
+                <p class="item-price">R69,99</p>
+                <button class="add-item-btn" onclick="increment()">ADD TO CART</button>
+            </div>
+            
+            <div class="item-div">
+                <img src="/images/burger/10.jpg" class="item-img">
+                <h5 class="item-name">2x Regular + Chicken Burger + Chips (s)</h5>
+                <p class="item-price">R75,99</p>
+                <button class="add-item-btn" onclick="increment()">ADD TO CART</button>
+            </div>
+            
+            <div class="item-div">
+                <img src="/images/burger/11.jpg" class="item-img">
+                <h5 class="item-name">Tummy Pleaser + Chips (s)</h5>
+                <p class="item-price">R84,99</p>
+                <button class="add-item-btn" onclick="increment()">ADD TO CART</button>
+            </div>
+            
+            <div class="item-div">
+                <img src="/images/burger/12.jpg" class="item-img">
+                <h5 class="item-name">3 Way Burger Combo + Chips (XL)</h5>
+                <p class="item-price">R199,99</p>
+                <button class="add-item-btn" onclick="increment()">ADD TO CART</button>
+            </div>
+            
+            <div class="item-div">
+                <img src="/images/burger/13.jpg" class="item-img">
+                <h5 class="item-name">Tummy Pleaser + Chips (s)</h5>
+                <p class="item-price">R74,99</p>
+                <button class="add-item-btn" onclick="increment()">ADD TO CART</button>
+            </div>
+            
+            <div class="item-div">
+                <img src="/images/burger/14.png" class="item-img">
+                <h5 class="item-name">Tummy Pleaser + Chips (s)</h5>
+                <p class="item-price">R119,99</p>
+                <button class="add-item-btn" onclick="increment()">ADD TO CART</button>
+            </div>
+            
+            <div class="item-div">
+                <img src="/images/burger/15.jpg" class="item-img">
+                <h5 class="item-name">Tummy Pleaser + Chips (s)</h5>
+                <p class="item-price">R109,99</p>
+                <button class="add-item-btn" onclick="increment()">ADD TO CART</button>
+            </div>
+            
+        </section>
+        <!--Viewport 1 end-->
+
+        <p class="to-top"><a href="#home-section">Back To Top</a></p>
+
+        <section class="policy-section">
+            
+           <p><a href="Terms.html">Terms & Conditions</a></p>
+           <p><a>Privacy Policy</a></p>
+           <p><a href="contact.html">Contact Us</a></p>  
+        </section>
+
+        <footer> 
+            <div class="footer-div" id="footer-div">
+                <div class="footer-logo" id="footer-logo">
+                    <img src="/images/Logo.png" class="footer-logo">
+                </div>
+
+                <div class="about-us">
+                    <h2>About Us</h2>
+                        <p>Our History</p>
+                        <p>Our Food</p>
+                        <p>Allergens Statement</p>              
+                </div>
+
+                <div class="services">
+                    <h2>Services</h2>
+                    <p>Wifi</p>
+                </div>
+
+                <div class="customer-care">
+                    <h2>Locations</h2>
+                    <p>Big Jos Near Me</p>
+                </div>
+            </div>
+            <div class="credit">Copyright @2022 by <span>&nbsp Sandile Ndimande</span></div>
+        </footer>
+
+        <script src="script.js"></script>
+    </div>
+    </body>
+    </html>
