@@ -24,6 +24,7 @@
     --clr-faded-black:rgba(35, 27, 27, 0.800);
 
     --clr-dark: rgb(45, 45, 255);
+    --clr-items-blue: rgb(7, 96, 155);
     
     --clr-normal: rgb(219, 124, 124);
     --clr-light: rgb(250, 250, 6);
@@ -559,11 +560,6 @@ footer {
     cursor: pointer;
 }
 
-.footer-extras{
-    display: flex;
-    justify-content: center;
-}
-
 .about-us{
     text-align: center;
     display: inline;
@@ -576,7 +572,7 @@ footer {
 }
 
 .about-us h2{
-    color: var(--clr-primary);
+    color: var(--clr-items-blue);
 }
 
 .services{
@@ -591,7 +587,7 @@ footer {
 }
 
 .services h2{
-    color: var(--clr-primary);
+    color: var(--clr-items-blue);
 }
 
 .location{
@@ -606,7 +602,7 @@ footer {
 }
 
 .location h2{
-    color: var(--clr-primary);
+    color: var(--clr-items-blue);
 }
 
 .credit{
@@ -643,6 +639,27 @@ footer {
     .location{
         margin: 0.1em;
         padding: 0.1em;
+    }
+}
+
+@media (min-width: 1000px) {
+    
+    .footer-extras{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .about-us{
+        text-align: center;
+        display: inline;
+        margin: 1em;
+        padding: 0.5em;
+    }
+
+    .services{
+        text-align: center;
+        display: inline;
+        margin: 1em 0em 1em;
+        padding: 0.5em;
     }
 }
 
@@ -738,7 +755,7 @@ footer {
     font-family: var(--ff-secondary);
     
     color: var(--clr-lightest);
-    background-color: rgb(7, 96, 155);
+    background-color: var(--clr-items-blue);
 }
 
 .add-item-btn:hover{
