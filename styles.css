@@ -135,10 +135,6 @@ body {
     display: none;
 }
 
-.order-section{
-    margin-top: 0;
-}
-
 .header-div .home-nav{
     display: flex;
     padding: 1em;
@@ -225,6 +221,13 @@ body {
     cursor: pointer;
     color: var(--clr-lightest);
     box-shadow: var(--bs);
+}
+
+@media (max-width: 416px){
+
+    .order-section{
+        margin-top: 0;
+    }
 }
 
 /*Animated Ads*/
@@ -643,6 +646,175 @@ footer {
     }
 }
 
+/* Burger Section */
+
+.burgers-header{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 1.3em;
+    font-size: 2.5em;
+    padding: 0.2em;
+    text-align: center;
+    background: var(--clr-light);
+    z-index: 10;
+}
+
+/* item section */
+
+#logo-img{
+    position: absolute;
+    left: -1em;
+    top: 2.5em;
+    width: 8em;
+    z-index: 15;
+    object-fit: cover;
+}
+
+#Logo-img:hover{
+    cursor: pointer;
+}
+
+.item-name {
+    position: absolute;
+    padding: 0.1em;
+    bottom: 25%;
+    left: 0.5em;
+    color: var(--clr-lightest);
+    background-color: var(--clr-faded-black);
+    font-weight: bold;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.item-price{
+    position: absolute;
+    bottom: 13%;
+    left: .5em;
+    font-weight: bold;
+    font-size: 1.3em;
+    font-family: 'Anton', sans-serif;
+}
+
+.item-img{
+    width: 1em;
+    height: 20em;
+    border-radius: .5em;
+    
+    box-shadow: var(--bs);
+}
+
+.item-div{
+    position: relative;
+    margin: 0 auto;
+    border-radius: .5em;
+    align-items: center;
+}
+
+.item-div, .item-img{
+    object-fit: cover;
+}
+
+.item-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 1em;
+    column-gap: 1em;
+    padding: .5em;
+}
+
+.add-item-btn{
+    border: none;
+    position: absolute;
+    text-align: center;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    left: .2em;
+    right: .2em;
+    bottom: .2em;
+    padding: .5em 5em;
+    border-radius: 0.5em;
+    justify-content: center;
+    font-family: var(--ff-secondary);
+    
+    color: var(--clr-lightest);
+    background-color: rgb(7, 96, 155);
+}
+
+.add-item-btn:hover{
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+@media (min-width: 0px) {
+
+    .burgers-header{
+        top: 1.85em;
+    }
+
+    .item-section {
+        grid-template-columns: 1fr;
+    }
+
+    .item-img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (min-width: 335px) {
+
+    .burgers-header{
+        top: 1.38em;
+    }
+}
+
+@media (min-width: 900px) {
+
+    .item-section {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1120px) {
+
+    .item-section {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1280px) {
+
+    .item-section {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 345px) {
+    
+.item-name{
+    background-color: rgba(255, 255, 255, 0);
+    text-align: center;
+    padding: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: 1em;
+    color: var(--clr-dark);
+    text-align: center;
+}
+
+.item-price{
+    text-align: center;
+    bottom: 13%;
+    left: 0;
+    right: 0;
+    font-size: 1.3em;
+    padding-bottom: .3em;
+}
+}
+
+
 /* 
 
 /*Menu Items*/
@@ -675,56 +847,6 @@ footer {
     top: 1.15em;
     z-index: 10;
     margin-top: 0;
-}
-
-.item-name {
-    position: relative;
-    padding: 0;
-    top: 70%;
-    left: .5em;
-    color: rgb(12, 12, 169);
-    font-weight: bold;
-    font-size: 1em;
-    font-family: 'Open Sans', sans-serif;
-}
-
-.item-price{
-    position: absolute;
-    top: 77.5%;
-    left: .44em;
-    font-weight: bold;
-    font-size: 1.3em;
-    font-family: 'Anton', sans-serif;
-}
-
-.item-img{
-    width: 20em;
-    position: relative;
-    left: .5%;
-    top: 2%;
-}
-
-.item-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-.item-div{
-    position: relative;
-    height: 20em;
-    margin: 1em 1em 2em;
-    border-radius: .5em;
-    align-items: center;
-    box-shadow: var(--bs);
-}
-
-.item-div img{
-    position: absolute;
-    object-fit: fill;
-}
-
-.add-item-btn:hover{
-    background-color: rgb(145, 12, 12);
 }
 
 .burgers-header{
