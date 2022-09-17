@@ -25,6 +25,7 @@
 
     --clr-dark: rgb(45, 45, 255);
     --clr-items-blue: rgb(7, 96, 155);
+    --clr-ice: rgb(0, 195, 255);
     
     --clr-normal: rgb(219, 124, 124);
     --clr-light: rgb(250, 250, 6);
@@ -689,6 +690,10 @@ footer {
 
 .chips-header{
     background-color: var(--clr-normal);
+}
+
+.drinks-header{
+    background-color: var(--clr-ice);
 }
 
 /* item section */
