@@ -687,6 +687,10 @@ footer {
     background-color: var(--clr-secondary);
 }
 
+.chips-header{
+    background-color: var(--clr-normal);
+}
+
 /* item section */
 
 .item-logo-img{
