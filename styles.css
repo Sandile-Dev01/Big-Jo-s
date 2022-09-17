@@ -863,7 +863,7 @@ footer {
 
 /*Customer Care*/
 
-/* legend{
+legend{
     text-align: center;
     margin: 0 auto;
     font-family: var(--ff-primary);
@@ -995,7 +995,13 @@ textarea{
 .customer-care-section-img .customer-chicken{
     border-top-right-radius: .5em;
     border-bottom-right-radius: .5em;
-} */
+}
+
+.contact-logo{
+    width: 5em;
+}
+
+/*  */
 
 /*Terms and conditions*/
 /* 

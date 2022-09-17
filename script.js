@@ -112,7 +112,6 @@ const phoneNumber = document.querySelector('#phone-number');
 const message = document.querySelector('#message');
 const msg = document.querySelector('.msg');
 
-
 myForm.addEventListener('submit', onSubmit);
 
 function onSubmit(e){
