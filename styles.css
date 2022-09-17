@@ -572,7 +572,7 @@ footer {
 }
 
 .about-us h2{
-    color: var(--clr-items-blue);
+    color: var(--clr-light);
 }
 
 .services{
@@ -587,7 +587,7 @@ footer {
 }
 
 .services h2{
-    color: var(--clr-items-blue);
+    color: var(--clr-light);
 }
 
 .location{
@@ -602,7 +602,7 @@ footer {
 }
 
 .location h2{
-    color: var(--clr-items-blue);
+    color: var(--clr-light);
 }
 
 .credit{
