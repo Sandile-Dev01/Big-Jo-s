@@ -13,37 +13,43 @@
         <!--Sticky-->
 
         <section class="customerCare-section">
-        <h1 style="color: white; padding: .2em 0; text-align: center; font-size: 2.5em;">Our Customer Care</h1>
+        <h1 class="customer-care-header">Our Customer Care</h1>
     </section>
 
     <img src="Logo.png" class="contact-logo">
 
     <section class="customer-care-section-img">
-        <img src="drinksss.jpg" class="customer-care-img customer-burger">
-        <img src="burger-menu.jpg" class="customer-care-img">
-        <img src="shwarma-menu.jpg" class="customer-care-img">
-        <img src="chicken-menu.jpg" class="customer-care-img customer-chicken">
+        <img src="drinksss.jpg" class="customer-care-img">
     </section> 
     
     <section>
         <div class="contact-subhead">      
         <h1>Contact</h1>
         <p>If you've got any queries or concerns, drop us a line and we'll get back to you in the quickest time imaginable!</p>
-        <p>Contact number : 088 923 3434</p>
+        <p>Contact number : 066 046 1612</p>
         </div>
     </section>
 
     <div class="container">
-        <form action="">
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+        <div id="customer-msg"></div>
+
+        <form action="" id="customer-form">
+          <label for="fname" >First Name</label>
+          <input type="text" id="customer-name" name="firstname" placeholder="Your name..">
       
           <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          <input type="text" id="customer-surname" name="lastname" placeholder="Your last name..">
+      
+          <label for="email">Email Address</label>
+          <input type="email" id="customer-email" name="email" placeholder="Your email address">
+      
+          <label for="mobile-number">Phone Number</label>
+          <input type="tel" id="customer-number" name="phone-number" placeholder="Your phone number">
       
           <label for="province">Province</label>
           <select id="province" name="province">
-            <option value="">--select your province--</option>
+            <option value="">--Select your province--</option>
             <option value="KZN">KZN</option>
             <option value="Gauteng">Gauteng</option>
             <option value="Western Cape">Western Cape</option>
@@ -56,7 +62,7 @@
           </select>
       
           <label for="subject">Subject</label>
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          <textarea id="subject" name="subject" placeholder="Message*" style="height:200px"></textarea>
       
           <input type="submit" value="Submit">
         </form>

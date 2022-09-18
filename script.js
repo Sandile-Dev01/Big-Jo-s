@@ -104,13 +104,13 @@ calculation();
 
 //Forms
 
-const myForm = document.querySelector('#customer-form');
-const nameInput = document.querySelector('#customer-name');
-const lastName = document.querySelector('#customer-last-name')
-const emailInput = document.querySelector('#customer-email');
-const phoneNumber = document.querySelector('#customer-phone-number');
-const message = document.querySelector('#customer-message');
-const msg = document.querySelector('#customer-msg');
+const myForm = document.getElementById("customer-form");
+const nameInput = document.getElementById("customer-name");
+const lastName = document.getElementById("customer-surname")
+const emailInput = document.getElementById("customer-email");
+const phoneNumber = document.getElementById("customer-number");
+const message = document.querySelector("customer-message");
+const msg = document.getElementById("customer-msg");
 
 myForm.addEventListener('submit', onSubmit);
 
@@ -129,12 +129,3 @@ function onSubmit(e){
         setTimeout(() => msg.remove(), 2000)
     }
 }
-
-var noti = document.querySelector('h1');
-	var select = document.querySelector('.select');
-	var button = document.getElementsByClassName('add-to-cartBtn');
-	for(var but of button)
-		but.addEventListener('click', (e)=>{
-			var add = Number(noti.getAttribute('data-count') || 0);
-			noti.setAttribute('data-count', add +1);
-			noti.classList.add('zero')})

@@ -863,13 +863,6 @@ footer {
 
 /*Customer Care*/
 
-legend{
-    text-align: center;
-    margin: 0 auto;
-    font-family: var(--ff-primary);
-    width: 30%;
-}
-
 .error {
     color: rgb(255, 0, 0);
     font-family: var(--ff-primary);
@@ -880,6 +873,13 @@ legend{
     color: rgb(0, 68, 255);
     font-family: var(--ff-secondary);
     font-size: var(--fw-bold);
+}
+
+.customer-care-header{
+    color: var(--clr-lightest); 
+    padding: .2em 0; 
+    text-align: center; 
+    font-size: 2.5em;
 }
 
 .customer-care-body{
@@ -906,9 +906,6 @@ legend{
 }
 
 .customer-care-section-img{
-    display: grid;
-    grid-template-columns: repeat(4, 20%);
-    gap: 0;
     margin-bottom: 5em;
 }
 
@@ -919,8 +916,9 @@ legend{
     object-fit: cover;
     position: absolute;
     margin: 0;
-    left: 2em;
+    left: 2%;
     top: 5em;
+    border-radius: 0.5em;
     z-index: -1;
 }
 
@@ -930,7 +928,7 @@ legend{
 
    /*form*/
 
-input[type=text], select, textarea {
+input[type=text], input[type=email], input[type=tel], select, textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -941,7 +939,7 @@ input[type=text], select, textarea {
     resize: vertical;
   }
 
-input[type=text], select, textarea:hover {
+input[type=text], input[type=email], input[type=tel], select, textarea:focus{
     outline: none;
   }
   
@@ -960,22 +958,13 @@ input[type=text], select, textarea:hover {
   }
   
   .container {
+
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
-    margin: 7em auto;
+    margin: 10em auto 2em;
     width: 90%;
-    bottom: 50%;
   }
-
-@media (min-width: 0px){
-}
-
-@media (min-width: 1280px){
-}
-
-
-/*  */
 
 /*Terms and conditions*/
 /* 
