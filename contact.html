@@ -33,46 +33,35 @@
         </div>
     </section>
 
-    <section class="customer-care-inputs">
-
-
-        <form action="" id="customer-form">
-            <fieldset>
-        <legend>Your Info</legend>
-            <div class="msg"></div>
-
-            <div class="inputBox">
-                <div class="input">
-                    <input type="text" placeholder="First Name*" id="name">
-                </div>
-            </div>
-
-            <div class="inputBox">
-                <div class="input">
-                    <input type="text" placeholder="Last Name*" id="last-name">
-                </div>
-            </div>
-
-            <div class="inputBox">
-                <div class="input">
-                    <input type="email" placeholder="Email Address*" id="email">
-                </div>
-            </div>
-
-            <div class="inputBox">
-                <div class="input">
-                    <input type="phone" placeholder="Phone Number*" id="phone-number">
-                </div>
-            </div>
-
-                <div class="input">
-                    <textarea type="text" placeholder="Message*" id="message"></textarea>
-                </div>
-            </div>
-
-            <input type="submit" value="submit" class="btn">
-        </fieldset>
+    <div class="container">
+        <form action="">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+          <label for="province">Province</label>
+          <select id="province" name="province">
+            <option value="">--select your province--</option>
+            <option value="KZN">KZN</option>
+            <option value="Gauteng">Gauteng</option>
+            <option value="Western Cape">Western Cape</option>
+            <option value="Northen Cape">Northen Cape</option>
+            <option value="Free State">Free State</option>
+            <option value="North West">North West</option>
+            <option value="Eastern Cape">Eastern Cape</option>
+            <option value="Limpopo">Limpopo</option>
+            <option value="Mpumalanga">Mpumalanga</option>
+          </select>
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
         </form>
+      </div>
+
     </section>
 
     <footer>

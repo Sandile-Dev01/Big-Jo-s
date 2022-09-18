@@ -105,12 +105,12 @@ calculation();
 //Forms
 
 const myForm = document.querySelector('#customer-form');
-const nameInput = document.querySelector('#name');
-const lastName = document.querySelector('#last-name')
-const emailInput = document.querySelector('#email');
-const phoneNumber = document.querySelector('#phone-number');
-const message = document.querySelector('#message');
-const msg = document.querySelector('.msg');
+const nameInput = document.querySelector('#customer-name');
+const lastName = document.querySelector('#customer-last-name')
+const emailInput = document.querySelector('#customer-email');
+const phoneNumber = document.querySelector('#customer-phone-number');
+const message = document.querySelector('#customer-message');
+const msg = document.querySelector('#customer-msg');
 
 myForm.addEventListener('submit', onSubmit);
 
