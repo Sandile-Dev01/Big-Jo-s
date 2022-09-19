@@ -27,6 +27,7 @@
     --clr-items-blue: rgb(7, 96, 155);
     --clr-ice: rgb(0, 195, 255);
     
+    --clr-privacy: rgba(238, 229, 229, 0.948);
     --clr-normal: rgb(219, 124, 124);
     --clr-light: rgb(250, 250, 6);
     --clr-lightest: rgb(250,250,250);
@@ -966,53 +967,34 @@ input[type=text], input[type=email], input[type=tel], select, textarea:focus{
     width: 90%;
   }
 
-/*Terms and conditions*/
-/* 
-.terms-logo{
-width: 18em;
-height: 20em;
-position: absolute;
-top: -7em;
-left: -.85em;
-z-index: 15;
-display: flex;
-object-fit: contain;
+/* Privacy Policy */
+
+.privacy-policy-body{
+    background-color: var(--clr-privacy);
 }
 
-.terms-container .terms-subhead div, h1, .terms-paragraph{
-    padding: 0 2em;
-}
-
-.terms-container .terms-subhead div, .terms-paragraph{
-    transition-duration: 3s;
-}
-
-.terms-container .terms-subhead .terms-paragraph:hover{
-    font-family: cursive;
-    color: rgb(4, 4, 32);
-}
-
-.terms-header{
-    padding: 0 0 1em;
-    text-decoration: underline;
-    font-family: var(--ff-secondary);
-}
-
-.terms-container .div, h1{
+.privacy-header{
     text-align: center;
-    margin: .5em 0 0;
+    background-color: var(--clr-dark);
+    padding: 0.2em;
+    color: var(--clr-privacy);
 }
 
-.ts-and-cs-body{
-    margin-top: 0em;
-} 
-
-footer .credit span{
-    color: rgb(255, 234, 1);
-    transition-duration: 1.5s;
+.privacy-subhead h1{
+    text-align: center;
 }
 
-footer .credit span:hover{
-    color: rgb(1, 255, 204);
-    cursor: no-drop;
-}  */
+.privacy-paragraph{
+    padding: 0.3em 1em;
+}
+
+.privacy-logo{
+    position: absolute;
+    width: 50%;
+    top: 20%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: -20;
+    opacity: 0.1;
+}
