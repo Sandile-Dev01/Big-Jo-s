@@ -27,6 +27,7 @@
     --clr-items-blue: rgb(7, 96, 155);
     --clr-ice: rgb(0, 195, 255);
     
+    --clr-terms: rgba(196, 240, 236, 0.489);
     --clr-privacy: rgba(238, 229, 229, 0.948);
     --clr-normal: rgb(219, 124, 124);
     --clr-light: rgb(250, 250, 6);
@@ -969,6 +970,10 @@ input[type=text], input[type=email], input[type=tel], select, textarea:focus{
 
 /* Privacy Policy */
 
+.terms-body{
+    background-color: var(--clr-terms);
+}
+
 .privacy-policy-body{
     background-color: var(--clr-privacy);
 }
@@ -977,14 +982,23 @@ input[type=text], input[type=email], input[type=tel], select, textarea:focus{
     text-align: center;
     background-color: var(--clr-dark);
     padding: 0.2em;
+    margin-bottom: 1em;
     color: var(--clr-privacy);
+    position: sticky;
+    top: 0;
+    font-family: var(--ff-secondary);
 }
 
 .privacy-subhead h1{
     text-align: center;
+    font-family: var(--ff-primary);
 }
 
 .privacy-paragraph{
+    padding: 0.3em 1em;
+}
+
+.privacy-subhead li{
     padding: 0.3em 1em;
 }
 
@@ -997,4 +1011,14 @@ input[type=text], input[type=email], input[type=tel], select, textarea:focus{
     margin: 0 auto;
     z-index: -20;
     opacity: 0.2;
+}
+
+.terms-banner{
+    width: 70%;
+    height: 20em;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    object-fit: cover;
+    border-radius: 0.5em;
 }
