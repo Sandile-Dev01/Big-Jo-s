@@ -996,5 +996,5 @@ input[type=text], input[type=email], input[type=tel], select, textarea:focus{
     right: 0;
     margin: 0 auto;
     z-index: -20;
-    opacity: 0.1;
+    opacity: 0.2;
 }
