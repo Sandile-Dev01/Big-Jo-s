@@ -4,12 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant Website</title>
+    <title>Cart</title>
     <script src="https://kit.fontawesome.com/9c2c64b826.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="Logo.png">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+
+    <div class="header-div">
+        <div class="header-logo" id="header-logo">
+            <a href="#home"></a>
+            <img src="Logo.png" class="logo-img">
+        </div>
+
+            <ul class="home-nav">
+                <li><a href="index.html" id="home">Home</a></li>
+                <li id="menu-option"><a href="#show-menu">Menu</a></li>
+                <li><a href="#">Stores</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+    </div> 
     
+    <!--Order Section-->
+
+    <section class="order-section">
+        <a class="order-btn" href="#menu">Order Now</a>
+        
+        <div class="cart-container">
+            <div class="cart"><i class="fa-solid fa-cart-shopping cart-icon"></i></div>
+            <div class="cartValue" id="cartValue">0</div>
+        </div>
+    </section>
+
+   <div id="label" class="text-center"></div>
+   <div class="shopping-cart" id="shopping-cart"></div>
+
 </body>
-<script src="script.js"></script>
+
+    <script src="data.js"></script>
+    <script src="cart.js"></script>
+
 </html>

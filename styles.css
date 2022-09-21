@@ -1022,3 +1022,72 @@ input[type=text], input[type=email], input[type=tel], select, textarea:focus{
     object-fit: cover;
     border-radius: 0.5em;
 }
+
+/**
+Cart Styles
+**/
+
+.text-center{
+    text-align: center;
+    margin-bottom: 0.2em;
+}
+
+.homeBtn{
+    background-color: var(--clr-dark);
+    color: var(--clr-lightest);
+    cursor: pointer;
+    border: none;
+    border-radius: 0.2em;
+    padding: 0.5em;
+    margin-top: 0.2em;
+}
+
+.fa-light{
+    color: var(--clr-dark-green);
+    font-weight: bold;
+}
+
+/*Styles for shopping cart*/
+
+.shopping-cart{
+    display: grid;
+    grid-template-columns: repeat(1, 350px);
+    justify-content: center;
+    gap: 1em;
+}
+
+/*Styles for shopping cart item*/
+
+.cart-item{
+    border: 2px solid var(--clr-black);
+    border-radius: 0.3em;
+    display: flex;
+}
+
+.title-price-x {
+    width: 15em;
+    display: flex;
+    align-items: center;
+}
+
+.title-price{
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.cart-item-price{
+    background-color: var(--clr-black);
+    color: var(--clr-lightest);
+}
+
+.quantity{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-buttons{
+    display: flex;
+    gap: 0.5em;
+    font-size: 1em;
+}
