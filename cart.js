@@ -41,7 +41,7 @@ let generateCartItems = () => {
 
                         <i onclick="decrement(${id})" class="fa-solid fa-minus"></i>
                         <div id=${id} class="quantity">${item}</div>
-                        <i onclick="increment(${id})" class="fa-light fa-plus"></i>
+                        <i onclick="increment(${id})" class="fa-solid fa-plus"></i>
 
                     </div>
 
@@ -95,6 +95,7 @@ let decrement = (id) =>{
     }
     update(selectedItem.id);
     basket = basket.filter((x) => x.item !== 0);
+    generateCartItems();
     localStorage.setItem("data", JSON.stringify(basket));
 };
 

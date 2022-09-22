@@ -1067,15 +1067,12 @@ input[type=text], input[type=email], input[type=tel], select, textarea:focus{
 }
 
 .fa-xmark{
+    position: absolute;
+    padding: 0.15em;
+    top: 0;
+    right: 0;
     color: red;
 }
-
-.fa-light{
-    color: var(--clr-ice);
-    font-weight: bold;
-}
-
-
 
 /*Styles for shopping cart*/
 
@@ -1089,11 +1086,13 @@ input[type=text], input[type=email], input[type=tel], select, textarea:focus{
 /*Styles for shopping cart item*/
 
 .cart-item{
+    position: relative;
     border: 2px solid var(--clr-black);
     border-radius: 0.3em;
     display: flex;
     color: var(--clr-lightest);
     background-color: black;
+    width: 100%;
 }
 
 .title-price-x {
@@ -1110,6 +1109,8 @@ input[type=text], input[type=email], input[type=tel], select, textarea:focus{
 
 .cart-item-price{
     background-color: var(--clr-lightest);
+    position: absolute;
+    top: 25%;
     color: var(--clr-black);
     padding: 0.1em;
     margin: 0.2em;
@@ -1122,7 +1123,10 @@ input[type=text], input[type=email], input[type=tel], select, textarea:focus{
 }
 
 .cart-buttons{
+    position: absolute;
     display: flex;
+    bottom: 0;
+    padding: 0.5em;
     gap: 0.5em;
     font-size: 1em;
 }
