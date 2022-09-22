@@ -204,6 +204,7 @@ body {
     top: 0;
     z-index: 10;
     justify-content: space-between;
+    align-items: center;
 }
 
 .order-section{
@@ -234,7 +235,7 @@ body {
     background-color: var(--clr-dark);
 }
 
-.order-btn {
+.order-btn{
     text-decoration: none;
     border: 2px solid rgba(0, 0, 0, 0);
     border-radius: 0.5em;
@@ -971,7 +972,7 @@ input[type=text], input[type=email], input[type=tel], select, textarea:focus{
     outline: none;
   }
   
-  input[type=submit] {
+  input[type=submit]{
     background-color: var(--clr-greener);
     color: var(--clr-black);
     padding: 12px 20px;
@@ -1056,7 +1057,7 @@ input[type=text], input[type=email], input[type=tel], select, textarea:focus{
     margin-bottom: 0.2em;
 }
 
-.homeBtn{
+.homeBtn, .checkout, .removeAll{
     background-color: var(--clr-dark);
     color: var(--clr-lightest);
     cursor: pointer;
@@ -1064,6 +1065,15 @@ input[type=text], input[type=email], input[type=tel], select, textarea:focus{
     border-radius: 0.2em;
     padding: 0.5em;
     margin-top: 0.2em;
+}
+
+.checkout{
+    background-color: var(--clr-greener);
+    color: var(--clr-black);
+}
+
+.removeAll{
+    background-color: red;
 }
 
 .fa-xmark{
@@ -1084,6 +1094,12 @@ input[type=text], input[type=email], input[type=tel], select, textarea:focus{
 }
 
 /*Styles for shopping cart item*/
+
+.cart-img{
+    border-radius: 3px;
+    margin-right: 5px;
+    width: 30%;
+}
 
 .cart-item{
     position: relative;

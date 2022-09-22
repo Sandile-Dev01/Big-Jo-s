@@ -21,21 +21,22 @@ let generateCartItems = () => {
 
             let {id, item} = x;
             let search = shopItemsData.find((y)=> y.id === id) || [];
+            let {img, name, price} = search;
 
             return `
 
             <div class="cart-item">
-                <img width="100" src=${search.img} alt="" />
+                <img class="cart-img" src=${img} alt="" />
                 <div class="details">
 
                   <div class="title-price-x">
 
                     <h4 class="title-price">
-                        <p>${search.name}</p>
-                        <p class="cart-item-price">R${search.price}</p>
+                        <p>${name}</p>
+                        <p class="cart-item-price">R${price}</p>
                     </h4>
 
-                    <i class="fa-solid fa-xmark"></i>
+                    <i onclick="removeItem(${id})" class="fa-solid fa-xmark"></i>
                     
                     <div class="cart-buttons">
 
@@ -106,4 +107,43 @@ let update = (id) => {
     document.getElementById(id).innerHTML = search.item;
     
     calculation();
+    totalAmount();
 };
+
+let removeItem = (id) => {
+    let selectedItem = id;
+
+    basket = basket.filter((x)=> x.id !== selectedItem.id);
+    generateCartItems();
+    totalAmount();
+    calculation();
+
+    localStorage.setItem("data", JSON.stringify(basket));
+}
+
+let clearCart = () =>{
+    basket = [];
+    generateCartItems();
+    calculation();
+    localStorage.setItem("data", JSON.stringify(basket));
+}
+
+let totalAmount = () => {
+    if( basket.length !== 0){
+        let amount = basket.map((x)=>{
+            let {item, id} = x;
+            let search = shopItemsData.find((y)=> y.id === id) || [];
+            return item * search.price;
+        }).reduce((x,y)=> x + y, 0);
+
+        label.innerHTML = `
+        <h2>Total Bill : R ${amount}</h2>
+        <button class="checkout">Checkout</button>
+        <button onclick="clearCart()" class="removeAll">Clear Cart/button>
+        `;
+    }
+
+    else return;
+};
+
+totalAmount();
