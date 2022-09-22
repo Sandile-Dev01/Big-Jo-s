@@ -32,17 +32,16 @@ let generateCartItems = () => {
 
                     <h4 class="title-price">
                         <p>${search.name}</p>
-                        <p class="cart-item-price">${search.price}</p>
+                        <p class="cart-item-price">R${search.price}</p>
                     </h4>
 
-                    <i class="fa-light fa-x"></i>
+                    <i class="fa-solid fa-xmark"></i>
                     
                     <div class="cart-buttons">
 
                         <i onclick="decrement(${id})" class="fa-light fa-dash"></i>
-                        <div id=${id} class="quantity">${item}
-                        </div>
-                        <i onclick="increment(${id}" class="fa-light fa-plus"></i>
+                        <div id=${id} class="quantity">${item}</div>
+                        <i onclick="increment(${id})" class="fa-light fa-plus"></i>
 
                     </div>
 

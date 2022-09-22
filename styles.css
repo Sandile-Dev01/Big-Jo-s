@@ -1042,8 +1042,12 @@ Cart Styles
     margin-top: 0.2em;
 }
 
+.fa-xmark{
+    color: red;
+}
+
 .fa-light{
-    color: var(--clr-dark-green);
+    color: var(--clr-ice);
     font-weight: bold;
 }
 
@@ -1062,6 +1066,8 @@ Cart Styles
     border: 2px solid var(--clr-black);
     border-radius: 0.3em;
     display: flex;
+    color: var(--clr-lightest);
+    background-color: black;
 }
 
 .title-price-x {
@@ -1077,8 +1083,11 @@ Cart Styles
 }
 
 .cart-item-price{
-    background-color: var(--clr-black);
-    color: var(--clr-lightest);
+    background-color: var(--clr-lightest);
+    color: var(--clr-black);
+    padding: 0.1em;
+    margin: 0.2em;
+    border-radius: 0.2em;
 }
 
 .quantity{
