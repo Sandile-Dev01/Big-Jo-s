@@ -20,7 +20,7 @@ let generateCartItems = () => {
         .map((x) => {
 
             let {id, item} = x;
-            let search = shopItemsData.find((y)=> y.id === id) || []
+            let search = shopItemsData.find((y)=> y.id === id) || [];
 
             return `
 
@@ -45,7 +45,7 @@ let generateCartItems = () => {
 
                     </div>
 
-                        <h3></h3>
+                        <h3 class="quantity-price">R ${item * search.price}</h3>
                   </div>
                 </div>
             </div>
@@ -80,6 +80,7 @@ let increment = (id) => {
         search.item += 1;
     }
 
+    generateCartItems();
     update(selectedItem.id);
     localStorage.setItem("data", JSON.stringify(basket));
 };
