@@ -77,29 +77,3 @@ calculation();
 
 
 //Forms
-
-const myForm = document.getElementById("customer-form");
-const nameInput = document.getElementById("customer-name");
-const lastName = document.getElementById("customer-surname")
-const emailInput = document.getElementById("customer-email");
-const phoneNumber = document.getElementById("customer-number");
-const message = document.querySelector("customer-message");
-const msg = document.getElementById("customer-msg");
-
-myForm.addEventListener('submit', onSubmit);
-
-function onSubmit(e) {
-    e.preventDefault();
-
-    if (nameInput.value === '' || lastName.value === '' || emailInput.value === '' || phoneNumber.value === '' || message.value === '') {
-        msg.classList.add('error');
-        msg.innerHTML = 'Please enter all fields!';
-
-        setTimeout(() => msg.remove(), 1500);
-    } else {
-        msg.classList.add('success');
-        msg.innerHTML = 'Form Submitted Succesfully!';
-
-        setTimeout(() => msg.remove(), 2000)
-    }
-}

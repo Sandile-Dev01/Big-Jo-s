@@ -139,7 +139,7 @@ let totalAmount = () => {
         label.innerHTML = `
         <h2>Total Bill : R ${amount}</h2>
         <button class="checkout">Checkout</button>
-        <button onclick="clearCart()" class="removeAll">Clear Cart/button>
+        <button onclick="clearCart()" class="removeAll">Clear Cart</button>
         `;
     }
 
