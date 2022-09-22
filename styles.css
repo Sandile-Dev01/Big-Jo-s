@@ -9,6 +9,31 @@
     box-sizing: border-box;
 }
 
+::-webkit-scrollbar-track
+{
+	box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: var(--clr-lightest);
+}
+
+::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: var(--clr-lightest);
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: var(--clr-dark);	
+	background-image: -webkit-linear-gradient(90deg,
+	                                          var(--clr-scroll) 25%,
+											  transparent 25%,
+											  transparent 50%,
+											  var(--clr-scroll) 50%,
+											  var(--clr-scroll) 75%,
+											  transparent 75%,
+											  transparent)
+}
+
 :root {
     --ff-primary: 'Nunito', sans-serif;
     --ff-secondary: 'Cabin', sans-serif;
@@ -22,6 +47,7 @@
     --clr-black: rgb(0, 0, 0);
     --clr-light-dark:rgba(35, 27, 27, 0.925);
     --clr-faded-black:rgba(35, 27, 27, 0.800);
+    --clr-scroll: rgba(255, 255, 255, .2);
 
     --clr-dark: rgb(45, 45, 255);
     --clr-items-blue: rgb(7, 96, 155);
@@ -1023,9 +1049,7 @@ input[type=text], input[type=email], input[type=tel], select, textarea:focus{
     border-radius: 0.5em;
 }
 
-/**
-Cart Styles
-**/
+/*Cart Styles*/
 
 .text-center{
     text-align: center;
@@ -1050,6 +1074,8 @@ Cart Styles
     color: var(--clr-ice);
     font-weight: bold;
 }
+
+
 
 /*Styles for shopping cart*/
 

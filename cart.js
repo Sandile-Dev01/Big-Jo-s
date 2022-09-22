@@ -39,7 +39,7 @@ let generateCartItems = () => {
                     
                     <div class="cart-buttons">
 
-                        <i onclick="decrement(${id})" class="fa-light fa-dash"></i>
+                        <i onclick="decrement(${id})" class="fa-solid fa-minus"></i>
                         <div id=${id} class="quantity">${item}</div>
                         <i onclick="increment(${id})" class="fa-light fa-plus"></i>
 
