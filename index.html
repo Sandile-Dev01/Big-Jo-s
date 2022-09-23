@@ -45,9 +45,36 @@
 
         <!--Ads Section-->
 
-        <div class="animatedAds">
-            <img src="drinksss.jpg" class="imgAd"></img>
-        </div>   
+        <div class="slideshow-container">
+
+            <div class="animatedAds fade">
+                <img src="friedChips-menu.jpg" class="imgAd"></img>
+                <div class="caption">Our Crispy Chips</div>
+            </div>
+
+            <div class="animatedAds fade">
+                <img src="burger-menu.jpg" class="imgAd"></img>
+                <div class="caption">Our A Grade Burgers</div>
+            </div>
+
+            <div class="animatedAds fade">
+                <img src="hake-menu.jpg" class="imgAd"></img>
+                <div class="caption">Our Scrumptious Hake</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+
+        <!-- Recommendations Section -->
             
             <h2 class="recommendations-header">Recommendations</h2>
             <h4><a href="#menu" class="view-menu">View Entire Menu</a></h4>
@@ -130,8 +157,8 @@
 
     </div>
 
-    <script src="data.js"></script>
-    <script src="script.js"></script>
+    <script defer src="data.js"></script>
+    <script defer src="script.js"></script>
     
     </body>
     </html>
