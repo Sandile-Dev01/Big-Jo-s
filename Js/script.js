@@ -91,21 +91,3 @@ let calculation = () => {
 };
 
 calculation();
-
-
-
-
-//Burgers
-
-//Chicken
-
-//Chips
-
-//Drinks
-
-//Hake
-
-//Shwarma
-
-
-//Forms
