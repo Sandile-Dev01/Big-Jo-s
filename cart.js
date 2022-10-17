@@ -144,6 +144,7 @@ let totalAmount = () => {
     }
 
     else return;
+
 };
 
 totalAmount();
