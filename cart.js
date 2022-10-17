@@ -26,7 +26,7 @@ let generateCartItems = () => {
             return `
 
             <div class="cart-item">
-                <img class="cart-img" src=${img} alt="" />
+                <img src=${img} class="cart-img"/>
                 <div class="details">
 
                   <div class="title-price-x">
