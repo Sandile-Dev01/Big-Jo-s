@@ -1092,6 +1092,13 @@ input[type=text], input[type=email], input[type=tel], select, textarea:focus{
     font-family: var(--ff-secondary);
 }
 
+.privacy-header i{
+    position: absolute;
+    color: var(--clr-lightest);
+    font-size: 0.8em;
+    right: 2%;
+}
+
 .privacy-subhead h1{
     text-align: center;
     font-family: var(--ff-primary);
