@@ -17,7 +17,7 @@
         <h1 class="customer-care-header">Our Customer Care</h1>
     </section>
 
-    <a href="../index.html">
+    <a href="../index">
       <img src="../headers/Logo.png" class="contact-logo">
     </a>
     
@@ -37,18 +37,18 @@
 
         <div id="customer-msg"></div>
 
-        <form action="" id="customer-form">
+        <form action="https://formsubmit.co/ndimandesandile778@gmail.com" method="POST" id="customer-form">
           <label for="fname" >First Name</label>
-          <input type="text" id="customer-name" name="firstname" placeholder="Your name..">
+          <input type="text" id="customer-name" name="firstname" placeholder="Your name.." required>
       
           <label for="lname">Last Name</label>
-          <input type="text" id="customer-surname" name="lastname" placeholder="Your last name..">
+          <input type="text" id="customer-surname" name="lastname" placeholder="Your last name.." required>
       
           <label for="email">Email Address</label>
-          <input type="email" id="customer-email" name="email" placeholder="Your email address">
+          <input type="email" id="customer-email" name="email" placeholder="Your email address" required>
       
           <label for="mobile-number">Phone Number</label>
-          <input type="tel" id="customer-number" name="phone-number" placeholder="Your phone number">
+          <input type="tel" id="customer-number" name="phone-number" placeholder="Your phone number" required>
       
           <label for="province">Province</label>
           <select id="province" name="province">
@@ -67,7 +67,7 @@
           <label for="subject">Subject</label>
           <textarea id="subject" name="subject" placeholder="Message*" style="height:200px"></textarea>
       
-          <input type="submit" value="Submit">
+          <input type="submit" value="Submit" required>
         </form>
       </div>
 
